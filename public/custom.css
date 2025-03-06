@@ -1,4 +1,5 @@
 /* Header Row  */
+
 .header {
     padding-top: 15px;
 }
@@ -13,7 +14,18 @@
     max-height: 35%;    
 }
 
+ /* Overrides satellite.css selector: adjusted padding-left and added padding-bottom - Casey Piket */
+
+ .ais-SearchBox {
+  float: left;
+  width: 70%;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
 /* List of selected filters  */
+
 .filters-selected {
     padding-top: 10px;
     padding-left: 20px;
@@ -21,6 +33,7 @@
 }
 
 /* Facet Column  */
+
 .sidebar {
     float: left;
     padding-left: 20px;
@@ -79,6 +92,7 @@
 }
 
 /* Pagination below results  */
+
 .page-nav {
     display: flex;
     justify-content: center;
@@ -87,15 +101,6 @@
     padding-top: 25px;
     padding-bottom: 30px;
 }
- 
- /* Overrides satellite.css selector: adjusted padding-left and added padding-bottom - Casey Piket */
- .ais-SearchBox {
-    float: left;
-    width: 70%;
-    padding-left: 0px;
-    padding-top: 0px;
-    padding-bottom: 10px;
-  }
 
   /* Hits */
 
@@ -130,6 +135,10 @@
   
   /* Product List */
   
+  .hit-link {
+    text-decoration: none;
+  }
+
   article {
     display: block;
     unicode-bidi: isolate;
@@ -140,6 +149,7 @@
     font-size: 14px;
     line-height: 18px;
     vertical-align: top;
+    align-items: center;
   }
   
   .hit h1 a {
@@ -150,6 +160,7 @@
   
   .hit-category {
     color: #21243d;
+    text-decoration: none;
     font-size: 12px;
     font-weight: 600;
     line-height: 1;
@@ -193,4 +204,45 @@
     border-radius: 4px;
     margin-left: 4px;
     padding: 0 4px;
+  }
+
+  /* CSS for Add to Cart Button */
+
+  .add2cart {
+    display: block;
+    padding-top: 10px;
+    /* align-items: center; */
+    align-self: center;
+  }
+
+  .add-to-cart {
+    background-color: #0a4abf;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-to-cart:hover {
+    background-color: #FFA500;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  .add-to-cart:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-to-cart svg {
+    width: 20px;
+    height: 20px;
   }
