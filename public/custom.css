@@ -1,0 +1,196 @@
+/* Header Row  */
+.header {
+    padding-top: 15px;
+}
+
+.logoImg {
+    top: 9px;
+    left: 0;
+    padding-left: 10px;
+    padding-right: 15px;
+    float: left;
+    max-width: 20%;
+    max-height: 35%;    
+}
+
+/* List of selected filters  */
+.filters-selected {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+/* Facet Column  */
+.sidebar {
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.filter-header {
+    min-height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    vertical-align: text-top;
+  }
+
+.filter-header-text {
+    font-size: 1.25em;
+  }
+
+.filter-box {
+    border-top: 5px silver;
+    padding-right: 20px;
+  }
+
+.filter-label {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border-top: 5px silver;
+  }
+  
+.ais-RefinementList-list {
+    clear: left;
+  }
+  
+.ais-RefinementList-searchBox {
+    vertical-align: left;
+  }
+
+/* Stats and SortBy  */
+
+.results {
+    float: left;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.ais-Stats-text {
+    color: #7D7F7C;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+/* Pagination below results  */
+.page-nav {
+    display: flex;
+    justify-content: center;
+}
+.ais-Pagination {
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+ 
+ /* Overrides satellite.css selector: adjusted padding-left and added padding-bottom - Casey Piket */
+ .ais-SearchBox {
+    float: left;
+    width: 70%;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+
+  /* Hits */
+
+.ais-Hits {
+    margin-top: '10px';
+    max-width: 1100px;
+  }
+  
+  .ais-Hits-list {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+  }
+  
+  @media (min-width: 680px) {
+    .ais-Hits-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .ais-Hits-list {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .ais-Hits-list {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  /* Product List */
+  
+  article {
+    display: block;
+    unicode-bidi: isolate;
+  }
+  
+  .hit {
+    color: #21243d;
+    font-size: 14px;
+    line-height: 18px;
+    vertical-align: top;
+  }
+  
+  .hit h1 a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #21243d;
+  }
+  
+  .hit-category {
+    color: #21243d;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 8px;
+    opacity: 0.7;
+    text-transform: uppercase;
+  }
+  
+  .hit-description {
+    margin-top: 2px;
+    padding-bottom: 1em;
+  }
+  
+  .hit-info-container {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  
+  .hit-image-container {
+    align-items: center;
+    display: flex;
+    height: 174px;
+    justify-content: center;
+    margin: auto;
+    width: 174px;
+  }
+  
+  .hit-image {
+    height: auto;
+    vertical-align: top;
+  }
+  
+  .hit-em {
+    color: #e2a400;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  
+  .hit-rating {
+    border: 1px solid rgba(226, 164, 0, 0.5);
+    border-radius: 4px;
+    margin-left: 4px;
+    padding: 0 4px;
+  }
