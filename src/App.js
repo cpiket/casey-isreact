@@ -18,7 +18,7 @@ import {
 } from 'react-instantsearch';
 
 // Configure the instance and access key.
-const searchClient = algoliasearch('D1T6069SVF', '2c559a44bcc5c5d8ae4eed1293958f98');
+const searchClient = algoliasearch('D1T6069SVF', 'ELECTRONICS');
 
 // Render the product results grid.
 function Hit({ hit }){
