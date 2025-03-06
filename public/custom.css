@@ -165,6 +165,7 @@
     font-weight: 600;
     line-height: 1;
     margin-bottom: 8px;
+    margin-top: 25px;
     opacity: 0.7;
     text-transform: uppercase;
   }
@@ -190,6 +191,7 @@
   
   .hit-image {
     height: auto;
+    max-height: 185px;
     vertical-align: top;
   }
   
